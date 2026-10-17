@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Create a local demo contributor account for Welcome to Nigeria Travel Magazine."
+    />
+    <title>Create Account | Welcome to Nigeria Travel Magazine</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body data-page="signup">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div data-site-header></div>
+    <main id="main">
+      <section class="page-hero">
+        <div class="wrap">
+          <p class="eyebrow">Join the community</p>
+          <h1 class="page-title">Create your account</h1>
+          <p class="body-lead">
+            Keep your stories together and follow the journeys that inspire you.
+          </p>
+        </div>
+      </section>
+      <section class="section wrap" style="padding-top: 42px">
+        <div class="auth-wrap">
+          <form id="signup-form" class="auth-card">
+            <div class="notice">
+              Create a secure contributor profile to publish stories, save your favorite reads, and connect with Nigeria's travel community.
+            </div>
+            <div class="field" style="margin-top: 20px">
+              <label for="signup-name">Full name</label
+              ><input
+                id="signup-name"
+                name="name"
+                autocomplete="name"
+                required
+              />
+            </div>
+            <div class="field" style="margin-top: 16px">
+              <label for="signup-email">Email</label
+              ><input
+                id="signup-email"
+                name="email"
+                type="email"
+                autocomplete="email"
+                required
+              />
+            </div>
+            <div class="field" style="margin-top: 16px">
+              <label for="signup-password">Password</label
+              ><input
+                id="signup-password"
+                name="password"
+                type="password"
+                minlength="8"
+                autocomplete="new-password"
+                required
+              />
+            </div>
+            <div class="field" style="margin-top: 16px">
+              <label for="confirm-password">Confirm password</label
+              ><input
+                id="confirm-password"
+                name="confirm-password"
+                type="password"
+                minlength="8"
+                autocomplete="new-password"
+                required
+              />
+            </div>
+            <div class="field" style="margin-top: 16px">
+              <label for="signup-photo">Optional profile photo</label
+              ><input
+                id="signup-photo"
+                name="profile-photo"
+                type="file"
+                accept="image/*"
+              /><img
+                id="profile-photo-preview"
+                alt="Selected profile photo preview"
+                hidden
+                style="
+                  width: 64px;
+                  height: 64px;
+                  object-fit: cover;
+                  border-radius: 50%;
+                  margin-top: 10px;
+                "
+              />
+            </div>
+            <div class="field" style="margin-top: 16px">
+              <label for="signup-bio">Short bio</label
+              ><textarea
+                id="signup-bio"
+                name="bio"
+                style="min-height: 95px"
+                placeholder="A little about you and the places you love"
+              ></textarea>
+            </div>
+            <label class="checkbox-line" style="margin-top: 18px"
+              ><input name="terms" type="checkbox" required /><span
+                >I agree to the
+                <a class="text-link" href="terms.html"
+                  >Terms &amp; Conditions</a
+                >
+                and
+                <a class="text-link" href="privacy-policy.html"
+                  >Privacy Policy</a
+                >.</span
+              ></label
+            ><button class="button" type="submit">Create account</button>
+            <div class="form-success" role="status" aria-live="polite"></div>
+            <p class="auth-links">
+              <span>Already have an account?</span
+              ><a class="text-link" href="signin.html">Sign in</a>
+            </p>
+          </form>
+        </div>
+      </section>
+    </main>
+    <div data-site-footer></div>
+    <script src="js/stories.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/upload.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/profile.js"></script>
+  </body>
+</html>

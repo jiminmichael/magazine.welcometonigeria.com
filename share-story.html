@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Share your personal travel experience and photographs from a trip around Nigeria."
+    />
+    <title>Share Your Story | Welcome to Nigeria Travel Magazine</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body data-page="share-story">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div data-site-header></div>
+    <main id="main">
+      <section class="page-hero">
+        <div class="wrap">
+          <p class="eyebrow">Your journey belongs here</p>
+          <h1 class="page-title">Share Your Nigeria Travel Story</h1>
+          <p class="body-lead">
+            Have you travelled somewhere in Nigeria that left an impression on
+            you? Tell your story and inspire other travellers.
+          </p>
+        </div>
+      </section>
+      <section class="section wrap" style="padding-top: 42px">
+        <div class="form-layout">
+          <form id="story-submit-form" class="form-panel">
+            <section class="form-section">
+              <h2>Your details</h2>
+              <div class="form-grid">
+                <div class="field">
+                  <label for="contributor-name">Full name</label
+                  ><input
+                    id="contributor-name"
+                    name="name"
+                    autocomplete="name"
+                    required
+                  />
+                </div>
+                <div class="field">
+                  <label for="contributor-email">Email address</label
+                  ><input
+                    id="contributor-email"
+                    name="email"
+                    type="email"
+                    autocomplete="email"
+                    required
+                  /><small
+                    >Used to notify you on the review status of your submission.</small
+                  >
+                </div>
+                <div class="field full">
+                  <label for="profile-photo">Optional profile photo</label
+                  ><input
+                    id="profile-photo"
+                    name="profile-photo"
+                    type="file"
+                    accept="image/*"
+                  /><img
+                    id="profile-photo-preview"
+                    alt="Selected profile photo preview"
+                    hidden
+                    style="
+                      width: 64px;
+                      height: 64px;
+                      object-fit: cover;
+                      border-radius: 50%;
+                      margin-top: 10px;
+                    "
+                  />
+                </div>
+              </div>
+            </section>
+            <section class="form-section">
+              <h2>The journey</h2>
+              <div class="form-grid">
+                <div class="field">
+                  <label for="travel-state">State</label
+                  ><select id="travel-state" name="state" required>
+                    <option value="">Choose a state</option>
+                    <option>Abia</option>
+                    <option>Adamawa</option>
+                    <option>Akwa Ibom</option>
+                    <option>Anambra</option>
+                    <option>Bauchi</option>
+                    <option>Bayelsa</option>
+                    <option>Benue</option>
+                    <option>Borno</option>
+                    <option>Cross River</option>
+                    <option>Delta</option>
+                    <option>Ebonyi</option>
+                    <option>Edo</option>
+                    <option>Ekiti</option>
+                    <option>Enugu</option>
+                    <option>Gombe</option>
+                    <option>Imo</option>
+                    <option>Jigawa</option>
+                    <option>Kaduna</option>
+                    <option>Kano</option>
+                    <option>Katsina</option>
+                    <option>Kebbi</option>
+                    <option>Kogi</option>
+                    <option>Kwara</option>
+                    <option>Lagos</option>
+                    <option>Nasarawa</option>
+                    <option>Niger</option>
+                    <option>Ogun</option>
+                    <option>Ondo</option>
+                    <option>Osun</option>
+                    <option>Oyo</option>
+                    <option>Plateau</option>
+                    <option>Rivers</option>
+                    <option>Sokoto</option>
+                    <option>Taraba</option>
+                    <option>Yobe</option>
+                    <option>Zamfara</option>
+                    <option>FCT Abuja</option>
+                  </select>
+                </div>
+                <div class="field">
+                  <label for="location">Location or city</label
+                  ><input
+                    id="location"
+                    name="location"
+                    placeholder="For example, Abuja"
+                    required
+                  />
+                </div>
+                <div class="field">
+                  <label for="travel-date">When did you travel?</label
+                  ><input
+                    id="travel-date"
+                    name="travel-date"
+                    type="date"
+                    required
+                  />
+                </div>
+                <div class="field">
+                  <label for="story-title">Story title</label
+                  ><input
+                    id="story-title"
+                    name="title"
+                    maxlength="110"
+                    required
+                  />
+                </div>
+                <div class="field full">
+                  <label for="experience">Tell us about your experience</label
+                  ><textarea
+                    id="experience"
+                    name="experience"
+                    minlength="80"
+                    placeholder="Tell us where you went, what you experienced, what you enjoyed, what surprised you and what you would recommend to other travellers."
+                    required
+                  ></textarea>
+                </div>
+              </div>
+            </section>
+            <section class="form-section">
+              <h2>Photographs</h2>
+              <div class="upload-drop">
+                <strong>Upload photos from your trip</strong>
+                <p>
+                  Choose up to four original photographs from your trip (JPG or PNG up to 10 MB each).
+                </p>
+                <input
+                  id="story-photos"
+                  name="photos"
+                  type="file"
+                  accept="image/*"
+                  multiple
+                  aria-label="Upload photos from your trip"
+                />
+                <p
+                  id="upload-message"
+                  class="form-message"
+                  aria-live="polite"
+                ></p>
+                <div id="photo-previews" class="preview-list"></div>
+              </div>
+            </section>
+            <section class="form-section">
+              <h2>A few more details</h2>
+              <div class="form-grid">
+                <div class="field full">
+                  <label for="enjoyed">What did you enjoy most?</label
+                  ><textarea
+                    id="enjoyed"
+                    name="enjoyed"
+                    style="min-height: 90px"
+                  ></textarea>
+                </div>
+                <div class="field">
+                  <label for="recommend">Would you recommend this place?</label
+                  ><select id="recommend" name="recommend">
+                    <option value="">Choose one</option>
+                    <option>Absolutely</option>
+                    <option>Yes, with a few notes</option>
+                    <option>Maybe</option>
+                    <option>Not this time</option>
+                  </select>
+                </div>
+                <div class="field full">
+                  <label for="travel-tips">Travel tips for other visitors</label
+                  ><textarea
+                    id="travel-tips"
+                    name="travel-tips"
+                    style="min-height: 90px"
+                  ></textarea>
+                </div>
+                <div class="field full">
+                  <label class="checkbox-line"
+                    ><input type="checkbox" name="permission" required /><span
+                      >I confirm that these photos and this story belong to me
+                      or that I have permission to share them.</span
+                    ></label
+                  >
+                </div>
+              </div>
+            </section>
+            <button class="button" type="submit">
+              Submit my story <span aria-hidden="true">↗</span>
+            </button>
+            <div class="form-success" role="status" aria-live="polite"></div>
+          </form>
+          <aside class="form-aside">
+            <p class="eyebrow">How it works</p>
+            <h3>Your story, your point of view.</h3>
+            <p>
+              Submitted stories are safely saved and marked
+              <strong>Pending Review</strong>. They become public once approved by our editorial desk.
+            </p>
+            <ul>
+              <li>Use your own words and original photographs.</li>
+              <li>Include practical details other travellers can rely on.</li>
+              <li>Track your story's approval status anytime in your contributor account.</li>
+            </ul>
+            <p class="notice">
+              All submissions are securely reviewed by our team before publication.
+            </p>
+          </aside>
+        </div>
+      </section>
+    </main>
+    <div data-site-footer></div>
+    <script src="js/stories.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/upload.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/profile.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const user = JSON.parse(localStorage.getItem("wtnUser") || "null");
+        if (!user) return;
+        const form = document.getElementById("story-submit-form");
+        form.elements.name.value = user.name;
+        form.elements.email.value = user.email;
+        if (user.photo) {
+          form.dataset.photo = user.photo;
+          const preview = document.getElementById("profile-photo-preview");
+          preview.onload = () => {
+            preview.hidden = false;
+          };
+          preview.onerror = () => {
+            preview.removeAttribute("src");
+            form.dataset.photo = "";
+          };
+          preview.src = user.photo;
+        }
+      });
+    </script>
+  </body>
+</html>

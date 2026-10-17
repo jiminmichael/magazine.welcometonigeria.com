@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Browse first-hand travel stories from across Nigeria, shared by the travellers who experienced them."
+    />
+    <title>Explore Stories | Welcome to Nigeria Travel Magazine</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body data-page="stories">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div data-site-header></div>
+    <main id="main">
+      <section class="page-hero">
+        <div class="wrap">
+          <p class="eyebrow">Field notes from across the country</p>
+          <h1 class="page-title">Explore Stories</h1>
+          <p class="body-lead">
+            Every story here begins with someone who went, looked closer and
+            brought the experience back to share.
+          </p>
+        </div>
+      </section>
+      <section class="section wrap" style="padding-top: 42px">
+        <div class="toolbar">
+          <div class="search-field">
+            <input
+              id="story-search"
+              type="search"
+              placeholder="Search stories, places or travellers"
+              aria-label="Search stories, places or travellers"
+            />
+          </div>
+          <div class="filter-field">
+            <select id="state-filter" aria-label="Choose a state">
+              <option value="">All states + FCT</option>
+              <option>Abia</option>
+              <option>Adamawa</option>
+              <option>Akwa Ibom</option>
+              <option>Anambra</option>
+              <option>Bauchi</option>
+              <option>Bayelsa</option>
+              <option>Benue</option>
+              <option>Borno</option>
+              <option>Cross River</option>
+              <option>Delta</option>
+              <option>Ebonyi</option>
+              <option>Edo</option>
+              <option>Ekiti</option>
+              <option>Enugu</option>
+              <option>Gombe</option>
+              <option>Imo</option>
+              <option>Jigawa</option>
+              <option>Kaduna</option>
+              <option>Kano</option>
+              <option>Katsina</option>
+              <option>Kebbi</option>
+              <option>Kogi</option>
+              <option>Kwara</option>
+              <option>Lagos</option>
+              <option>Nasarawa</option>
+              <option>Niger</option>
+              <option>Ogun</option>
+              <option>Ondo</option>
+              <option>Osun</option>
+              <option>Oyo</option>
+              <option>Plateau</option>
+              <option>Rivers</option>
+              <option>Sokoto</option>
+              <option>Taraba</option>
+              <option>Yobe</option>
+              <option>Zamfara</option>
+              <option>FCT Abuja</option>
+            </select>
+          </div>
+          <div class="filter-field">
+            <select id="sort-filter" aria-label="Sort stories">
+              <option value="newest">Newest</option>
+              <option value="popular">Most popular</option>
+              <option value="featured">Featured</option>
+            </select>
+          </div>
+        </div>
+        <p class="result-count" id="result-count" aria-live="polite"></p>
+        <div class="story-grid" data-story-grid></div>
+      </section>
+    </main>
+    <div data-site-footer></div>
+    <script src="js/stories.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/upload.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/profile.js"></script>
+  </body>
+</html>
